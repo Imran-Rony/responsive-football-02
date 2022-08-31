@@ -1,0 +1,308 @@
+           /*-------------------------
+            Using google font family 
+            -------------------------*/
+
+           @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+           body {
+               font-family: 'Poppins', sans-serif;
+               margin: 0;
+           }
+
+           /*-------------------
+           Top banner Part 
+           ---------------------*/
+           .top-banner {
+               display: flex;
+               height: 630px;
+               background-color: #2D25A0;
+
+           }
+
+           .banner-info {
+
+               font-weight: 700;
+               font-size: 50px;
+               color: white;
+               line-height: 70px;
+               margin-top: 80px;
+               margin-left: 70px;
+               padding-bottom: 0;
+
+
+           }
+
+           .banner-info h3 {
+               margin-bottom: 0;
+           }
+
+           .global-btn {
+               text-decoration: none;
+               background-color: tomato;
+               font-weight: 400;
+               font-size: 20px;
+               color: white;
+               margin-top: 0;
+               padding: 10px 24px;
+               border-radius: 5px;
+           }
+
+           .global-btn:hover {
+               background-color: yellow;
+               color: black;
+           }
+
+
+           .banner-image img {
+               width: 556px;
+               height: 438px;
+               margin-right: 70px;
+               margin-left: 80px;
+               margin-top: 60px;
+
+           }
+
+           .banner-image img:hover {
+               transform: rotate(10deg);
+               transition: 3s;
+           }
+
+
+
+           /*------------------------
+            Players Part start 
+           -----------------------*/
+           .players-section {
+               display: flex;
+               justify-content: center;
+               background-color: rgba(128, 128, 128, 0.043);
+
+           }
+
+           .players {
+               width: 1050px;
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               grid-row-gap: 27px;
+               grid-column-gap: 30px;
+               margin-top: 60px;
+           }
+
+           .player {
+               width: 330px;
+               height: 550px;
+               border-radius: 5px;
+               box-shadow: 5px 5px 5px 5px rgb(197, 189, 189);
+           }
+
+           .player-image {
+               display: flex;
+               justify-content: center;
+               margin-top: 15px;
+           }
+
+           .player-image img {
+               width: 300px;
+               height: 256px;
+
+
+           }
+
+           .player-info {
+               padding: 15px;
+           }
+
+           .player-title {
+               font-weight: 700;
+               font-size: 28px;
+           }
+
+           /*-------------------------
+            Highlight Part start 
+           -------------------------*/
+
+           .highlight-section {
+               margin-top: 160px;
+               margin-bottom: 70px;
+               display: flex;
+               justify-content: center;
+
+           }
+
+           .highlight-info {
+               width: 469px;
+               height: 309px;
+               margin-right: 66px;
+
+           }
+
+           .highlight-title {
+               font-weight: 700;
+               font-size: 50px;
+               line-height: 70px;
+               margin-bottom: 0;
+           }
+
+           .highlight-info p {
+               margin-bottom: 24px;
+           }
+
+
+
+           .highlight-image img {
+               width: 567px;
+               height: 427px;
+           }
+
+
+           /*----------------------
+            Top scorer Part start 
+           -------------------------*/
+
+           .top-scorer-title {
+               font-weight: 700;
+               font-size: 50px;
+               display: flex;
+               justify-content: center;
+
+           }
+
+           .top-scorers {
+               display: flex;
+               justify-content: center;
+
+           }
+
+
+           table,
+           td {
+               border: 1px solid black;
+               border-collapse: collapse;
+               font-weight: 400;
+               font-size: 20px;
+               padding: 20px;
+               text-align: center;
+           }
+
+           th {
+               border: 1px solid black;
+               padding: 20px;
+           }
+
+           /*------------------------- 
+           Footer section start 
+           --------------------------*/
+           .footer-section {
+               margin-top: 150px;
+           }
+
+           .footer-details {
+               width: 100%;
+               margin: 0 auto;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+
+           }
+
+           .footer-details img {
+               width: 400px;
+
+           }
+
+           .social-logos img {
+               width: 40px;
+               height: 40px;
+           }
+
+
+           /*----------------------
+            Media query start 
+           ---------------------*/
+
+           /* Mobile devices */
+
+           @media only screen and (max-width: 688px) {
+               body {
+                   width: 100%;
+                   margin: 0;
+               }
+
+               .top-banner {
+                   display: flex;
+                   flex-direction: column;
+                   height: auto;
+
+               }
+
+               .top-banner img {
+                   width: 60%;
+
+               }
+
+               .players {
+                   grid-template-columns: repeat(1, 1fr);
+               }
+
+               .player {
+                   width: 100%;
+               }
+
+               .highlight-section {
+                   display: flex;
+                   flex-direction: column;
+                   width: 100%;
+                   height: auto;
+
+
+               }
+
+               .highlight-image img {
+                   width: 90%;
+                   margin-top: 150px;
+                   margin-left: 5%;
+
+               }
+
+               .highlight-info {
+                   margin-left: 115px;
+               }
+
+           }
+
+           /* Tablet devices */
+           @media only screen and (min-width:689px)and (max-width:991px) {
+               .top-banner {
+
+                   width: 100%;
+                   height: auto;
+                   flex-direction: column;
+
+               }
+
+               .players {
+                   grid-template-columns: repeat(2, 1fr);
+                   width: 100%;
+                   margin-left: 50px;
+               }
+
+               .highlight-section {
+                   display: flex;
+                   flex-direction: column;
+                   width: 100%;
+                   height: auto;
+               }
+
+               .highlight-info {
+                   margin-left: 190px;
+               }
+
+               .highlight-image img {
+                   width: 90%;
+                   margin-top: 150px;
+                   margin-left: 5%;
+
+               }
+           }
