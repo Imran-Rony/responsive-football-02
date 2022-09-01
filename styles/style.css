@@ -35,6 +35,7 @@
 
            .banner-info h3 {
                margin-bottom: 0;
+               width: 450px;
            }
 
            .global-btn {
@@ -233,22 +234,75 @@
                .top-banner {
                    display: flex;
                    flex-direction: column;
+                   width: 100%;
                    height: auto;
+               }
+
+               .banner-info {
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+                   margin: 0;
 
                }
 
-               .top-banner img {
-                   width: 60%;
+               .banner-info h3 {
+                   width: 300px;
 
+               }
+
+               .global-btn {
+                   padding-top: 0;
+                   padding-bottom: 0;
+               }
+
+               .banner-image {
+                   width: 100%;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   overflow: hidden;
+
+
+
+
+               }
+
+               .banner-image img {
+                   margin: 30px 0;
+                   padding: 0px 200px;
                }
 
                .players {
+                   width: 100%;
                    grid-template-columns: repeat(1, 1fr);
+                   margin: 30px 0;
+                   padding: 0;
+
+
                }
 
                .player {
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
                    width: 100%;
+                   text-align: center;
+                   padding: 0px;
                }
+
+               .player-info {
+                   padding: 30px;
+               }
+
+               .player-info p {
+                   padding: 0 30px;
+                   margin-top: 0;
+               }
+
+
 
                .highlight-section {
                    display: flex;
@@ -259,15 +313,31 @@
 
                }
 
-               .highlight-image img {
-                   width: 90%;
-                   margin-top: 150px;
-                   margin-left: 5%;
-
+               .highlight-image {
+                   width: 100%;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   margin-top: 50px;
                }
 
                .highlight-info {
-                   margin-left: 115px;
+                   width: 100%;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+
+               }
+
+               .highlight-info h3 {
+                   font-size: 30px;
+               }
+
+               .highlight-info p {
+                   text-align: center;
+                   padding: 30px;
+                   margin-top: 0;
                }
 
            }
@@ -279,14 +349,44 @@
                    width: 100%;
                    height: auto;
                    flex-direction: column;
+               }
 
+               .banner-image {
+                   width: 100%;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+               }
+
+               .banner-info {
+                   width: 100%;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+               }
+
+               .banner-info h3 {
+                   width: 300px;
+                   font-weight: 600;
+                   font-size: 40px;
+
+               }
+
+               .players-section {
+                   width: 100%;
+                   display: flex;
+                   justify-content: center;
                }
 
                .players {
                    grid-template-columns: repeat(2, 1fr);
                    width: 100%;
-                   margin-left: 50px;
+
+
                }
+
+
 
                .highlight-section {
                    display: flex;
